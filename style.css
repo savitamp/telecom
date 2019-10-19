@@ -1,0 +1,53 @@
+.navtxt{
+    background: white;
+    box-shadow: inset 4px 2px 36px -10px #C70039;
+}
+.fl-text{
+    margin:0px auto;
+    float: right;
+}
+.weltext{
+    text-align: center;
+    color: blue;
+    font-family: Arial;
+    margin-left: 20px;
+    font-size: 22px;
+    padding: 10px;
+}
+form{
+    
+    border: 1px solid #fff;
+    margin: px auto;
+
+}
+div{
+   margin: 0px auto;  
+   display: block;
+   
+  
+}
+/* .row{
+    margin: 0px auto;
+    margin-top: 5px;
+    
+} */
+.forps a{
+    margin: auto;
+    float: right;
+}   
+.bootomfooter {
+    border-top: 1px solid #000000;
+    background: blue;
+}
+.ct-sec
+{
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    color: #C70039;
+    background: #000000;
+    margin-top: 208px;
+}
+.y-tx{
+    float: right;
+  
+}
