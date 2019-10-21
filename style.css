@@ -1,5 +1,5 @@
 .navtxt{
-    background: white;
+    background: #fff;
     box-shadow: inset 4px 2px 36px -10px #C70039;
 }
 .fl-text{
@@ -50,4 +50,57 @@ div{
 .y-tx{
     float: right;
   
+}
+.fa-home{
+    font-size: 20px;
+}
+.div.zero-spacing {
+    padding: 0px;
+    margin: 0px;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+}
+
+.input-group {
+    background:violet;
+}
+#se-txt{
+    border-radius: 30px !important;
+    padding: 10px 20px;
+    margin-top: 5px;
+    height: 23px;
+    position: relative;
+    left: 5px;
+    width: 130px;
+}
+.input-group-btn {
+    position: relative;
+    font-size: 0;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+.input-group1 {
+    background:violet;
+    height: 30px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+.alarmstab {
+    height: 31px;
+    color: white;
+}
+.alarmstab {
+    background: violet;
+}
+.loc-checkbox
+{
+    height: 16em;
+    overflow-y: scroll;
+    
+}
+.loc{
+    background: violet;
+    color: #fff;
+    text-align: center;
 }
