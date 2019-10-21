@@ -104,3 +104,6 @@ div{
     color: #fff;
     text-align: center;
 }
+.tbl-data{
+    display: inline-block;
+}
