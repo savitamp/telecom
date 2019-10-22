@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,30 +18,84 @@
     <!--custom css stylesheet-->
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-        <div class="col-md-4 side-bar card card-body">
-                <div class="row">
-                        <div class="col-4">
-                          <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                            <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Performance</a>
-                            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Devices</a>
-                            <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Events</a>
-                            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">My Site</a>
-                          </div>
+    <div class="container side-bar card card-body">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical" onclick="myfm">
+                    <button onclick="myFunction()" id="v-pills-home-tab">Performance</button><br>
+                    <button onclick="myFunction1()" id="v-pills-profile-tab">Devices</button><br>
+                    <button onclick="myFunction2()" id="v-pills-messages-tab">Events</button><br>
+                    <button onclick="myFunction3()" id="v-pills-settings-tab">My Site</button>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div id="myDIV">
+                        <div class="card card-body up-bar" id="per-dash">
+                            <nav>
+                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab"
+                                        href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Site
+                                        Summary</a>
+                                    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab"
+                                        href="#nav-profile" role="tab" aria-controls="nav-profile"
+                                        aria-selected="false">Solar Energy</a>
+                                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab"
+                                        href="#nav-contact" role="tab" aria-controls="nav-contact"
+                                        aria-selected="false">Grid Energy</a>
+                                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab"
+                                        href="#nav-contact" role="tab" aria-controls="nav-contact"
+                                        aria-selected="false">Battery Energy</a>
+                                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab"
+                                        href="#nav-contact" role="tab" aria-controls="nav-contact"
+                                        aria-selected="false">Load Energy</a>
+                                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab"
+                                        href="#nav-contact" role="tab" aria-controls="nav-contact"
+                                        aria-selected="false">Generator Energy</a>
+                                </div>
+                            </nav>
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show" id="nav-home" role="tabpanel"
+                                    aria-labelledby="nav-home-tab">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Nemo, dolores.</div>
+                                <div class="tab-pane fade" id="nav-profile" role="tabpanel"
+                                    aria-labelledby="nav-profile-tab">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Reiciendis, temporibus.</div>
+                                <div class="tab-pane fade" id="nav-contact" role="tabpanel"
+                                    aria-labelledby="nav-contact-tab">Lorem, ipsum dolor sit amet consectetur
+                                    adipisicing elit. Optio, hic!</div>
+                                <div class="tab-pane fade" id="nav-contact" role="tabpanel"
+                                    aria-labelledby="nav-contact-tab">Lorem ipsum, dolor sit amet consectetur
+                                    adipisicing elit. Doloremque, earum.</div>
+                                <div class="tab-pane fade" id="nav-contact" role="tabpanel"
+                                    aria-labelledby="nav-contact-tab">Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Blanditiis, cumque.</div>
+                                <div class="tab-pane fade" id="nav-contact" role="tabpanel"
+                                    aria-labelledby="nav-contact-tab">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Veniam, cum.</div>
+
+                            </div>
                         </div>
-                        <div class="col-8">
-                          <div class="tab-content" id="v-pills-tabContent">
-                            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore velit dolor, perferendis magnam veritatis enim, porro mollitia autem unde repellat voluptatum dolore, nulla nostrum at itaque quos eligendi blanditiis deserunt!</div>
-                            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quod?</div>
-                            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam saepe aspernatur eum nobis consequatur alias debitis pariatur et magnam dicta!</div>
-                            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit laboriosam assumenda officia, iusto fugiat sit.</div>
-                          </div>
-                        </div>
-                      </div>
+                    </div>
+                    <div id="t2">
+                        this is 22 option
+                    </div>
+                    <div id="t3">
+                        this is 56 option
+                    </div>
+                    <div id="t4">
+                        this is 344 option
+                    </div>
+                </div>
+            </div>
         </div>
-        <script src="./js/jquery-3.4.1.js"></script>
-        <script src="./js/popper.min.js"></script>
-        <script src="./bootstrap-4.3.1-dist/js/bootstrap.js"></script>
-        <script src="./js/app.js"></script>
+    </div>
+    <script src="./js/jquery-3.4.1.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+    <script src="./js/app.js"></script>
 </body>
+
 </html>

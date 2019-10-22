@@ -41,11 +41,19 @@ div{
 }
 .ct-sec
 {
+    padding-top: 0.1em;
+    
+    color: #C70039;
+    background: #000000;
+    margin-top: 208px;
+}
+.ct-sec1
+{
     padding-top: 1em;
     padding-bottom: 0.5em;
     color: #C70039;
     background: #000000;
-    margin-top: 208px;
+    margin-top: 440px;
 }
 .y-tx{
     float: right;
@@ -146,4 +154,26 @@ div{
       color: #fff;
       border-color: #7f7f7f;
   }
-  
+  a .nav-link{
+      background: blue;
+  }
+  #v-pills-home-tab{
+      background: royalblue;
+      border: 1px solid #000000;
+      margin-bottom: 2px;
+  }
+  #v-pills-profile-tab{
+    background: royalblue;
+    border: 1px solid #000000;
+    margin-bottom: 2px;
+  }
+  #v-pills-messages-tab{
+    background: royalblue;
+    border: 1px solid #000000;
+    margin-bottom: 2px;
+  }
+  #v-pills-settings-tab{
+    background: royalblue;
+    border: 1px solid #000000;
+    margin-bottom: 2px;
+  }
