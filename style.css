@@ -106,4 +106,44 @@ div{
 }
 .tbl-data{
     display: inline-block;
+    overflow: scroll;
 }
+.side-bar{
+    background: #fff;
+    
+}
+.pagination>li.active>a, .pagination>li.active>a:hover {
+    background: violet;
+    color: #fff;
+      cursor: pointer;
+  }
+  
+  .pagination li
+  {
+      display: inline-block;
+      margin-left: 0.1em;
+      margin-right: 0.1em;
+      float: right;
+  }
+  
+  .pagination li>a
+  {
+      border-radius: 50%;
+      color: #7f7f7f;
+      border-color: #7f7f7f;
+  }
+  
+  .pagination li>a:hover
+  {
+     border-color:violet;
+     color: violet;    
+  }
+  
+  .pagination>li:first-child>a, .pagination>li:last-child>a
+  {
+      border-radius: 50%;
+      background: #7f7f7f;
+      color: #fff;
+      border-color: #7f7f7f;
+  }
+  
