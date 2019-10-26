@@ -36,15 +36,16 @@
                     <a class="nav-link" href="#"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;Home <span
                             class="sr-only">(current)</span></a>
                 </li>
-              
+
             </ul>
         </div>
     </nav>
     <section>
-        <div class="container side-bar card card-body mt-4">
+        <div class="side-bar card card-body mt-4">
             <div class="row">
                 <div class="col-md-2">
-                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical" onclick="myfm">
+                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical"
+                        onclick="myfm">
                         <button onclick="myFunction()" id="v-pills-home-tab">Performance</button>
                         <button onclick="myFunction1()" id="v-pills-profile-tab">Devices</button>
                         <button onclick="myFunction2()" id="v-pills-messages-tab">Events</button>
@@ -58,7 +59,8 @@
                                 <nav>
                                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
                                         <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab"
-                                            href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Site
+                                            href="#nav-home" role="tab" aria-controls="nav-home"
+                                            aria-selected="true">Site
                                             Summary</a>
                                         <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab"
                                             href="#nav-profile" role="tab" aria-controls="nav-profile"
@@ -79,24 +81,870 @@
                                 </nav>
                                 <div class="tab-content" id="nav-tabContent">
                                     <div class="tab-pane fade show" id="nav-home" role="tabpanel"
-                                        aria-labelledby="nav-home-tab">Lorem ipsum dolor sit amet consectetur adipisicing
-                                        elit. Nemo, dolores.</div>
+                                        aria-labelledby="nav-home-tab">
+                                        <div class="divImageData" style="font-size: 13px;">
+                                            <div class="SolarEnergySummaryData">
+                                                <table class="td-data">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="LableAlign">Energy &nbsp;:</td>
+                                                            <td class="EnergyReadingSCOSpan" style="font-size: 14px;">
+                                                                51.9 kWh</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="LableAlign">Peak Power &nbsp;:</td>
+                                                            <td class="EnergyReadingSCOSpan" style="font-size: 14px;">
+                                                                10972 W</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="LableAlign">Latest Power &nbsp;:</td>
+                                                            <td class="EnergyReadingSCOSpan" style="font-size: 14px;">0
+                                                                W</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                            <div class="GridEnergySummaryData" id="GridDataSummary">
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="LableAlign">Energy Imported &nbsp;:</td>
+                                                            <td class="EnergyReadingSCOSpan" style="font-size: 14px;">0
+                                                                kWh</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="LableAlign">Energy Exported &nbsp;:</td>
+                                                            <td class="EnergyReadingSCOSpan" style="font-size: 14px;">0
+                                                                kWh</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td class="LableAlign">Power &nbsp;:</td>
+                                                            <td class="EnergyReadingSCOSpan" style="font-size: 14px;">
+
+                                                                0W / 0W
+
+                                                            </td>
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                            <div class="LoadEnergySummaryData">
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="LableAlign">Energy &nbsp;:</td>
+                                                            <td class="EnergyReadingSCOSpan" style="font-size: 14px;">
+                                                                86.5 kWh</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="LableAlign">Peak Load Power &nbsp;:</td>
+                                                            <td class="EnergyReadingSCOSpan" style="font-size: 14px;">
+                                                                7110 W</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="LableAlign">Latest Power &nbsp;:</td>
+                                                            <td class="EnergyReadingSCOSpan" style="font-size: 14px;">
+                                                                5744 W</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                            <div class="GeneratorEnergySummaryData" id="GeneratorDataSummary">
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="LableAlign">Energy &nbsp;:</td>
+                                                            <td class="EnergyReadingSCOSpan" style="font-size: 14px;">
+                                                                49.5 kWh</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="LableAlign">Status &nbsp;:</td>
+                                                            <td class="EnergyReadingSCOSpan" style="font-size: 14px;">
+                                                                OFF </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="LableAlign">Status Duration &nbsp;:</td>
+                                                            <td class="EnergyReadingSCOSpan" style="font-size: 14px;">
+                                                                05h:31m </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="LableAlign">Latest Power &nbsp;:</td>
+                                                            <td class="EnergyReadingSCOSpan" style="font-size: 14px;">0
+                                                                W</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                            <div class="BatteryEnergySummaryData">
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="LableAlign">Energy to Battery &nbsp;:</td>
+                                                            <td class="EnergyReadingSCOSpan" style="font-size: 14px;">
+                                                                45.4 kWh</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="LableAlign">Energy from Battery &nbsp;:</td>
+                                                            <td class="EnergyReadingSCOSpan" style="font-size: 14px;">
+                                                                34.5 kWh</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="tab-pane fade" id="nav-profile" role="tabpanel"
-                                        aria-labelledby="nav-profile-tab">Lorem ipsum dolor sit amet consectetur adipisicing
-                                        elit. Reiciendis, temporibus.</div>
+                                        aria-labelledby="nav-profile-tab">
+                                        <form>
+                                            <table>
+                                                <th>
+
+                                                </th>
+                                                <tr>
+                                                    <td class="col-md-2">intervar&nbsp;</td>
+                                                    <td class="col-md-2"><select>
+                                                            <option value="Day">Day</option>
+                                                            <option value="Month">Month</option>
+                                                            <option value="Year">Year</option>
+                                                            <option value="Life Time">Life Time</option>
+                                                        </select></td>
+                                                    <td class="col-md-2">series2&nbsp;</td>
+                                                    <td class="col-md-2"><select>
+                                                            <option value="3">Battery Charge (Bank 1)</option>
+                                                            <option value="4">Battery Charge (Bank 2)</option>
+                                                            <option value="5">Battery Charge (Bank 3)</option>
+                                                            <option value="6">Battery Charge (Bank 4)</option>
+                                                            <option value="7">Battery Charge (Bank 5)</option>
+                                                            <option value="8">Battery Charge (Total)</option>
+                                                            <option value="9">Battery Discharge (Bank 1)</option>
+                                                            <option value="10">Battery Discharge (Bank 2)</option>
+                                                            <option value="11">Battery Discharge (Bank 3)</option>
+                                                            <option value="12">Battery Discharge (Bank 4)</option>
+                                                            <option value="13">Battery Discharge (Bank 5)</option>
+                                                            <option value="14">Battery Discharge (Total)</option>
+                                                            <option value="15">Gen Input</option>
+                                                            <option value="16">Grid Input</option>
+                                                            <option value="17">Grid Output</option>
+                                                            <option value="18">Load Output</option>
+                                                            <option value="19">PV Input (PV Inverters)</option>
+                                                            <option value="20">PV Input (Solar Charge Controllers)
+                                                            </option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="col-md-2">
+                                                        Source&nbsp;
+                                                    </td>
+                                                    <td class="col-md-2">
+                                                        <select>
+                                                            <option value="SCC">SCC</option>
+                                                            <option value="Inverter">PV Inverter</option>
+
+                                                        </select>
+                                                    </td>
+                                                    <td class="col-md-2">Series3</td>
+                                                    <td class="col-md-2">
+                                                        <select>
+                                                            <option value="3">Battery Charge (Bank 1)</option>
+                                                            <option value="4">Battery Charge (Bank 2)</option>
+                                                            <option value="5">Battery Charge (Bank 3)</option>
+                                                            <option value="6">Battery Charge (Bank 4)</option>
+                                                            <option value="7">Battery Charge (Bank 5)</option>
+                                                            <option value="8">Battery Charge (Total)</option>
+                                                            <option value="9">Battery Discharge (Bank 1)</option>
+                                                            <option value="10">Battery Discharge (Bank 2)</option>
+                                                            <option value="11">Battery Discharge (Bank 3)</option>
+                                                            <option value="12">Battery Discharge (Bank 4)</option>
+                                                            <option value="13">Battery Discharge (Bank 5)</option>
+                                                            <option value="14">Battery Discharge (Total)</option>
+                                                            <option value="15">Gen Input</option>
+                                                            <option value="16">Grid Input</option>
+                                                            <option value="17">Grid Output</option>
+                                                            <option value="18">Load Output</option>
+                                                            <option value="19">PV Input (PV Inverters)</option>
+                                                            <option value="20">PV Input (Solar Charge Controllers)
+                                                            </option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="col-md-2">Series 1</td>
+                                                    <td class="col-md-2">PV Input</td>
+                                                    <td class="col-md-2">Series4</td>
+                                                    <td class="col-md-2">
+                                                        <select>
+                                                            <option value="3">Battery Charge (Bank 1)</option>
+                                                            <option value="4">Battery Charge (Bank 2)</option>
+                                                            <option value="5">Battery Charge (Bank 3)</option>
+                                                            <option value="6">Battery Charge (Bank 4)</option>
+                                                            <option value="7">Battery Charge (Bank 5)</option>
+                                                            <option value="8">Battery Charge (Total)</option>
+                                                            <option value="9">Battery Discharge (Bank 1)</option>
+                                                            <option value="10">Battery Discharge (Bank 2)</option>
+                                                            <option value="11">Battery Discharge (Bank 3)</option>
+                                                            <option value="12">Battery Discharge (Bank 4)</option>
+                                                            <option value="13">Battery Discharge (Bank 5)</option>
+                                                            <option value="14">Battery Discharge (Total)</option>
+                                                            <option value="15">Gen Input</option>
+                                                            <option value="16">Grid Input</option>
+                                                            <option value="17">Grid Output</option>
+                                                            <option value="18">Load Output</option>
+                                                            <option value="19">PV Input (PV Inverters)</option>
+                                                            <option value="20">PV Input (Solar Charge Controllers)
+                                                            </option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="col-md-2">select</td>
+                                                    <td class="col-md-2"><input type="date" name="" id=""></td>
+                                                    <td class="col-md-2">Select</td>
+                                                    <td class="col-md-2"><input type="date" name="" id=""></td>
+                                                </tr>
+
+                                                <td colspan="4" style="vertical-align: middle; text-align: center">
+                                                    <div class="mt-4" style="left: 7%; position: relative;">
+                                                        <input type="button" value="Submit " class="but DashboardButton"
+                                                            id="btnSubmit">
+                                                        <input type="reset" value="Cancel" class="but DashboardButton"
+                                                            id="btnReset">
+                                                    </div>
+                                                </td>
+                                            </table>
+                                        </form>
+                                    </div>
                                     <div class="tab-pane fade" id="nav-contact" role="tabpanel"
-                                        aria-labelledby="nav-contact-tab">Lorem, ipsum dolor sit amet consectetur
-                                        adipisicing elit. Optio, hic!</div>
+                                        aria-labelledby="nav-contact-tab">
+                                        <form>
+                                            <table>
+                                                <th>
+
+                                                </th>
+                                                <tr>
+                                                    <td class="col-md-2">intervar&nbsp;</td>
+                                                    <td class="col-md-2"><select>
+                                                            <option value="Day">Day</option>
+                                                            <option value="Month">Month</option>
+                                                            <option value="Year">Year</option>
+                                                            <option value="Life Time">Life Time</option>
+                                                        </select></td>
+                                                    <td class="col-md-2">series2&nbsp;</td>
+                                                    <td class="col-md-2"><select>
+                                                            <option value="3">Battery Charge (Bank 1)</option>
+                                                            <option value="4">Battery Charge (Bank 2)</option>
+                                                            <option value="5">Battery Charge (Bank 3)</option>
+                                                            <option value="6">Battery Charge (Bank 4)</option>
+                                                            <option value="7">Battery Charge (Bank 5)</option>
+                                                            <option value="8">Battery Charge (Total)</option>
+                                                            <option value="9">Battery Discharge (Bank 1)</option>
+                                                            <option value="10">Battery Discharge (Bank 2)</option>
+                                                            <option value="11">Battery Discharge (Bank 3)</option>
+                                                            <option value="12">Battery Discharge (Bank 4)</option>
+                                                            <option value="13">Battery Discharge (Bank 5)</option>
+                                                            <option value="14">Battery Discharge (Total)</option>
+                                                            <option value="15">Gen Input</option>
+                                                            <option value="16">Grid Input</option>
+                                                            <option value="17">Grid Output</option>
+                                                            <option value="18">Load Output</option>
+                                                            <option value="19">PV Input (PV Inverters)</option>
+                                                            <option value="20">PV Input (Solar Charge Controllers)
+                                                            </option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="col-md-2">
+                                                        Source&nbsp;
+                                                    </td>
+                                                    <td class="col-md-2">
+                                                        GridEnergyDashboard
+                                                    </td>
+                                                    <td class="col-md-2">Series3</td>
+                                                    <td class="col-md-2">
+                                                        <select>
+                                                            <option value="3">Battery Charge (Bank 1)</option>
+                                                            <option value="4">Battery Charge (Bank 2)</option>
+                                                            <option value="5">Battery Charge (Bank 3)</option>
+                                                            <option value="6">Battery Charge (Bank 4)</option>
+                                                            <option value="7">Battery Charge (Bank 5)</option>
+                                                            <option value="8">Battery Charge (Total)</option>
+                                                            <option value="9">Battery Discharge (Bank 1)</option>
+                                                            <option value="10">Battery Discharge (Bank 2)</option>
+                                                            <option value="11">Battery Discharge (Bank 3)</option>
+                                                            <option value="12">Battery Discharge (Bank 4)</option>
+                                                            <option value="13">Battery Discharge (Bank 5)</option>
+                                                            <option value="14">Battery Discharge (Total)</option>
+                                                            <option value="15">Gen Input</option>
+                                                            <option value="16">Grid Input</option>
+                                                            <option value="17">Grid Output</option>
+                                                            <option value="18">Load Output</option>
+                                                            <option value="19">PV Input (PV Inverters)</option>
+                                                            <option value="20">PV Input (Solar Charge Controllers)
+                                                            </option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="col-md-2">Series 1</td>
+                                                    <td class="col-md-2">
+                                                        <select>
+                                                            <option value="3">Battery Charge (Bank 1)</option>
+                                                            <option value="4">Battery Charge (Bank 2)</option>
+                                                            <option value="5">Battery Charge (Bank 3)</option>
+                                                            <option value="6">Battery Charge (Bank 4)</option>
+                                                            <option value="7">Battery Charge (Bank 5)</option>
+                                                            <option value="8">Battery Charge (Total)</option>
+                                                            <option value="9">Battery Discharge (Bank 1)</option>
+                                                            <option value="10">Battery Discharge (Bank 2)</option>
+                                                            <option value="11">Battery Discharge (Bank 3)</option>
+                                                            <option value="12">Battery Discharge (Bank 4)</option>
+                                                            <option value="13">Battery Discharge (Bank 5)</option>
+                                                            <option value="14">Battery Discharge (Total)</option>
+                                                            <option value="15">Gen Input</option>
+                                                            <option value="16">Grid Input</option>
+                                                            <option value="17">Grid Output</option>
+                                                            <option value="18">Load Output</option>
+                                                            <option value="19">PV Input (PV Inverters)</option>
+                                                            <option value="20">PV Input (Solar Charge Controllers)
+                                                            </option>
+                                                        </select>
+                                                    </td>
+                                                    <td class="col-md-2">Series4</td>
+                                                    <td class="col-md-2">
+                                                        <select>
+                                                            <option value="3">Battery Charge (Bank 1)</option>
+                                                            <option value="4">Battery Charge (Bank 2)</option>
+                                                            <option value="5">Battery Charge (Bank 3)</option>
+                                                            <option value="6">Battery Charge (Bank 4)</option>
+                                                            <option value="7">Battery Charge (Bank 5)</option>
+                                                            <option value="8">Battery Charge (Total)</option>
+                                                            <option value="9">Battery Discharge (Bank 1)</option>
+                                                            <option value="10">Battery Discharge (Bank 2)</option>
+                                                            <option value="11">Battery Discharge (Bank 3)</option>
+                                                            <option value="12">Battery Discharge (Bank 4)</option>
+                                                            <option value="13">Battery Discharge (Bank 5)</option>
+                                                            <option value="14">Battery Discharge (Total)</option>
+                                                            <option value="15">Gen Input</option>
+                                                            <option value="16">Grid Input</option>
+                                                            <option value="17">Grid Output</option>
+                                                            <option value="18">Load Output</option>
+                                                            <option value="19">PV Input (PV Inverters)</option>
+                                                            <option value="20">PV Input (Solar Charge Controllers)
+                                                            </option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="col-md-2">select</td>
+                                                    <td class="col-md-2"><input type="date" name="" id=""></td>
+                                                    <td class="col-md-2">Select</td>
+                                                    <td class="col-md-2"><input type="date" name="" id=""></td>
+                                                </tr>
+
+                                                <td colspan="4" style="vertical-align: middle; text-align: center">
+                                                    <div class="mt-4" style="left: 7%; position: relative;">
+                                                        <input type="button" value="Submit " class="but DashboardButton"
+                                                            id="btnSubmit">
+                                                        <input type="reset" value="Cancel" class="but DashboardButton"
+                                                            id="btnReset">
+                                                    </div>
+                                                </td>
+                                            </table>
+                                        </form>
+                                    </div>
                                     <div class="tab-pane fade" id="nav-contact" role="tabpanel"
-                                        aria-labelledby="nav-contact-tab">Lorem ipsum, dolor sit amet consectetur
-                                        adipisicing elit. Doloremque, earum.</div>
+                                        aria-labelledby="nav-contact-tab">
+                                        <form>
+                                            <table>
+                                                <th>
+
+                                                </th>
+                                                <tr>
+                                                    <td class="col-md-2">intervar&nbsp;</td>
+                                                    <td class="col-md-2"><select>
+                                                            <option value="Day">Day</option>
+                                                            <option value="Month">Month</option>
+                                                            <option value="Year">Year</option>
+                                                            <option value="Life Time">Life Time</option>
+                                                        </select></td>
+                                                    <td class="col-md-2">series2&nbsp;</td>
+                                                    <td class="col-md-2"><select>
+                                                            <option value="3">Battery Charge (Bank 1)</option>
+                                                            <option value="4">Battery Charge (Bank 2)</option>
+                                                            <option value="5">Battery Charge (Bank 3)</option>
+                                                            <option value="6">Battery Charge (Bank 4)</option>
+                                                            <option value="7">Battery Charge (Bank 5)</option>
+                                                            <option value="8">Battery Charge (Total)</option>
+                                                            <option value="9">Battery Discharge (Bank 1)</option>
+                                                            <option value="10">Battery Discharge (Bank 2)</option>
+                                                            <option value="11">Battery Discharge (Bank 3)</option>
+                                                            <option value="12">Battery Discharge (Bank 4)</option>
+                                                            <option value="13">Battery Discharge (Bank 5)</option>
+                                                            <option value="14">Battery Discharge (Total)</option>
+                                                            <option value="15">Gen Input</option>
+                                                            <option value="16">Grid Input</option>
+                                                            <option value="17">Grid Output</option>
+                                                            <option value="18">Load Output</option>
+                                                            <option value="19">PV Input (PV Inverters)</option>
+                                                            <option value="20">PV Input (Solar Charge Controllers)
+                                                            </option>   
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="col-md-2">
+                                                        Source&nbsp;
+                                                    </td>
+                                                    <td class="col-md-2">
+                                                        GridEnergyDashboard
+                                                    </td>
+                                                    <td class="col-md-2">Series3</td>
+                                                    <td class="col-md-2">
+                                                        <select>
+                                                            <option value="3">Battery Charge (Bank 1)</option>
+                                                            <option value="4">Battery Charge (Bank 2)</option>
+                                                            <option value="5">Battery Charge (Bank 3)</option>
+                                                            <option value="6">Battery Charge (Bank 4)</option>
+                                                            <option value="7">Battery Charge (Bank 5)</option>
+                                                            <option value="8">Battery Charge (Total)</option>
+                                                            <option value="9">Battery Discharge (Bank 1)</option>
+                                                            <option value="10">Battery Discharge (Bank 2)</option>
+                                                            <option value="11">Battery Discharge (Bank 3)</option>
+                                                            <option value="12">Battery Discharge (Bank 4)</option>
+                                                            <option value="13">Battery Discharge (Bank 5)</option>
+                                                            <option value="14">Battery Discharge (Total)</option>
+                                                            <option value="15">Gen Input</option>
+                                                            <option value="16">Grid Input</option>
+                                                            <option value="17">Grid Output</option>
+                                                            <option value="18">Load Output</option>
+                                                            <option value="19">PV Input (PV Inverters)</option>
+                                                            <option value="20">PV Input (Solar Charge Controllers)
+                                                            </option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="col-md-2">Series 1</td>
+                                                    <td class="col-md-2">
+                                                        <select>
+                                                            <option value="3">Grid Input</option>
+                                                            <option value="4">Grid Output</option>
+                                                            </select>
+                                                    </td>
+                                                    <td class="col-md-2">Series4</td>
+                                                    <td class="col-md-2">
+                                                        <select>
+                                                            <option value="3">Battery Charge (Bank 1)</option>
+                                                            <option value="4">Battery Charge (Bank 2)</option>
+                                                            <option value="5">Battery Charge (Bank 3)</option>
+                                                            <option value="6">Battery Charge (Bank 4)</option>
+                                                            <option value="7">Battery Charge (Bank 5)</option>
+                                                            <option value="8">Battery Charge (Total)</option>
+                                                            <option value="9">Battery Discharge (Bank 1)</option>
+                                                            <option value="10">Battery Discharge (Bank 2)</option>
+                                                            <option value="11">Battery Discharge (Bank 3)</option>
+                                                            <option value="12">Battery Discharge (Bank 4)</option>
+                                                            <option value="13">Battery Discharge (Bank 5)</option>
+                                                            <option value="14">Battery Discharge (Total)</option>
+                                                            <option value="15">Gen Input</option>
+                                                            <option value="16">Grid Input</option>
+                                                            <option value="17">Grid Output</option>
+                                                            <option value="18">Load Output</option>
+                                                            <option value="19">PV Input (PV Inverters)</option>
+                                                            <option value="20">PV Input (Solar Charge Controllers)
+                                                            </option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="col-md-2">select</td>
+                                                    <td class="col-md-2"><input type="date" name="" id=""></td>
+                                                    <td class="col-md-2">Select</td>
+                                                    <td class="col-md-2"><input type="date" name="" id=""></td>
+                                                </tr>
+
+                                                <td colspan="4" style="vertical-align: middle; text-align: center">
+                                                    <div class="mt-4" style="left: 7%; position: relative;">
+                                                        <input type="button" value="Submit " class="but DashboardButton"
+                                                            id="btnSubmit">
+                                                        <input type="reset" value="Cancel" class="but DashboardButton"
+                                                            id="btnReset">
+                                                    </div>
+                                                </td>
+                                            </table>
+                                        </form>
+                                    </div>
                                     <div class="tab-pane fade" id="nav-contact" role="tabpanel"
-                                        aria-labelledby="nav-contact-tab">Lorem ipsum dolor sit amet, consectetur
-                                        adipisicing elit. Blanditiis, cumque.</div>
+                                        aria-labelledby="nav-contact-tab">
+                                        <form>
+                                            <table>
+                                                <th>
+
+                                                </th>
+                                                <tr>
+                                                    <td class="col-md-2">intervar&nbsp;</td>
+                                                    <td class="col-md-2"><select>
+                                                            <option value="Day">Day</option>
+                                                            <option value="Month">Month</option>
+                                                            <option value="Year">Year</option>
+                                                            <option value="Life Time">Life Time</option>
+                                                        </select></td>
+                                                    <td class="col-md-2">series2&nbsp;</td>
+                                                    <td class="col-md-2"><select>
+                                                            <option value="3">Battery Charge (Bank 1)</option>
+                                                            <option value="4">Battery Charge (Bank 2)</option>
+                                                            <option value="5">Battery Charge (Bank 3)</option>
+                                                            <option value="6">Battery Charge (Bank 4)</option>
+                                                            <option value="7">Battery Charge (Bank 5)</option>
+                                                            <option value="8">Battery Charge (Total)</option>
+                                                            <option value="9">Battery Discharge (Bank 1)</option>
+                                                            <option value="10">Battery Discharge (Bank 2)</option>
+                                                            <option value="11">Battery Discharge (Bank 3)</option>
+                                                            <option value="12">Battery Discharge (Bank 4)</option>
+                                                            <option value="13">Battery Discharge (Bank 5)</option>
+                                                            <option value="14">Battery Discharge (Total)</option>
+                                                            <option value="15">Gen Input</option>
+                                                            <option value="16">Grid Input</option>
+                                                            <option value="17">Grid Output</option>
+                                                            <option value="18">Load Output</option>
+                                                            <option value="19">PV Input (PV Inverters)</option>
+                                                            <option value="20">PV Input (Solar Charge Controllers)
+                                                            </option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="col-md-2">
+                                                        Source&nbsp;
+                                                    </td>
+                                                    <td class="col-md-2">
+                                                        <select>
+                                                            <option value="SCC">Bank1</option>
+                                                            <option value="Inverter">Bank2</option>
+                                                            <option value="SCC">Bank3</option>
+                                                            <option value="Inverter">Bank4</option>
+                                                            <option value="SCC">Bank4</option>
+                                                            <option value="Inverter">Bank Total</option>
+                                                        </select>
+                                                    </td>
+                                                    <td class="col-md-2">Series3</td>
+                                                    <td class="col-md-2">
+                                                        <select>
+                                                            <option value="3">Battery Charge (Bank 1)</option>
+                                                            <option value="4">Battery Charge (Bank 2)</option>
+                                                            <option value="5">Battery Charge (Bank 3)</option>
+                                                            <option value="6">Battery Charge (Bank 4)</option>
+                                                            <option value="7">Battery Charge (Bank 5)</option>
+                                                            <option value="8">Battery Charge (Total)</option>
+                                                            <option value="9">Battery Discharge (Bank 1)</option>
+                                                            <option value="10">Battery Discharge (Bank 2)</option>
+                                                            <option value="11">Battery Discharge (Bank 3)</option>
+                                                            <option value="12">Battery Discharge (Bank 4)</option>
+                                                            <option value="13">Battery Discharge (Bank 5)</option>
+                                                            <option value="14">Battery Discharge (Total)</option>
+                                                            <option value="15">Gen Input</option>
+                                                            <option value="16">Grid Input</option>
+                                                            <option value="17">Grid Output</option>
+                                                            <option value="18">Load Output</option>
+                                                            <option value="19">PV Input (PV Inverters)</option>
+                                                            <option value="20">PV Input (Solar Charge Controllers)
+                                                            </option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="col-md-2">Series 1</td>
+                                                    <td class="col-md-2">
+                                                        <select>
+                                                            <option value="3">Batterycharge</option>
+                                                            <option value="4">Batterydischarge</option>
+                                                            </select>
+                                                    </td>
+                                                    <td class="col-md-2">Series4</td>
+                                                    <td class="col-md-2">
+                                                        <select>
+                                                            <option value="3">Battery Charge (Bank 1)</option>
+                                                            <option value="4">Battery Charge (Bank 2)</option>
+                                                            <option value="5">Battery Charge (Bank 3)</option>
+                                                            <option value="6">Battery Charge (Bank 4)</option>
+                                                            <option value="7">Battery Charge (Bank 5)</option>
+                                                            <option value="8">Battery Charge (Total)</option>
+                                                            <option value="9">Battery Discharge (Bank 1)</option>
+                                                            <option value="10">Battery Discharge (Bank 2)</option>
+                                                            <option value="11">Battery Discharge (Bank 3)</option>
+                                                            <option value="12">Battery Discharge (Bank 4)</option>
+                                                            <option value="13">Battery Discharge (Bank 5)</option>
+                                                            <option value="14">Battery Discharge (Total)</option>
+                                                            <option value="15">Gen Input</option>
+                                                            <option value="16">Grid Input</option>
+                                                            <option value="17">Grid Output</option>
+                                                            <option value="18">Load Output</option>
+                                                            <option value="19">PV Input (PV Inverters)</option>
+                                                            <option value="20">PV Input (Solar Charge Controllers)
+                                                            </option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="col-md-2">select</td>
+                                                    <td class="col-md-2"><input type="date" name="" id=""></td>
+                                                    <td class="col-md-2">Select</td>
+                                                    <td class="col-md-2"><input type="date" name="" id=""></td>
+                                                </tr>
+
+                                                <td colspan="4" style="vertical-align: middle; text-align: center">
+                                                    <div class="mt-4" style="left: 7%; position: relative;">
+                                                        <input type="button" value="Submit " class="but DashboardButton"
+                                                            id="btnSubmit">
+                                                        <input type="reset" value="Cancel" class="but DashboardButton"
+                                                            id="btnReset">
+                                                    </div>
+                                                </td>
+                                            </table>
+                                        </form>
+                                    </div>
                                     <div class="tab-pane fade" id="nav-contact" role="tabpanel"
-                                        aria-labelledby="nav-contact-tab">Lorem ipsum dolor sit amet consectetur adipisicing
-                                        elit. Veniam, cum.</div>
-    
+                                        aria-labelledby="nav-contact-tab">
+                                        <form>
+                                            <table>
+                                                <th>
+
+                                                </th>
+                                                <tr>
+                                                    <td class="col-md-2">intervar&nbsp;</td>
+                                                    <td class="col-md-2"><select>
+                                                            <option value="Day">Day</option>
+                                                            <option value="Month">Month</option>
+                                                            <option value="Year">Year</option>
+                                                            <option value="Life Time">Life Time</option>
+                                                        </select></td>
+                                                    <td class="col-md-2">series2&nbsp;</td>
+                                                    <td class="col-md-2"><select>
+                                                            <option value="3">Battery Charge (Bank 1)</option>
+                                                            <option value="4">Battery Charge (Bank 2)</option>
+                                                            <option value="5">Battery Charge (Bank 3)</option>
+                                                            <option value="6">Battery Charge (Bank 4)</option>
+                                                            <option value="7">Battery Charge (Bank 5)</option>
+                                                            <option value="8">Battery Charge (Total)</option>
+                                                            <option value="9">Battery Discharge (Bank 1)</option>
+                                                            <option value="10">Battery Discharge (Bank 2)</option>
+                                                            <option value="11">Battery Discharge (Bank 3)</option>
+                                                            <option value="12">Battery Discharge (Bank 4)</option>
+                                                            <option value="13">Battery Discharge (Bank 5)</option>
+                                                            <option value="14">Battery Discharge (Total)</option>
+                                                            <option value="15">Gen Input</option>
+                                                            <option value="16">Grid Input</option>
+                                                            <option value="17">Grid Output</option>
+                                                            <option value="18">Load Output</option>
+                                                            <option value="19">PV Input (PV Inverters)</option>
+                                                            <option value="20">PV Input (Solar Charge Controllers)
+                                                            </option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="col-md-2">
+                                                        Source&nbsp;
+                                                    </td>
+                                                    <td class="col-md-2">
+                                                            LoadEnergyDashboard  
+                                                  </td>
+                                                    <td class="col-md-2">Series3</td>
+                                                    <td class="col-md-2">
+                                                        <select>
+                                                            <option value="3">Battery Charge (Bank 1)</option>
+                                                            <option value="4">Battery Charge (Bank 2)</option>
+                                                            <option value="5">Battery Charge (Bank 3)</option>
+                                                            <option value="6">Battery Charge (Bank 4)</option>
+                                                            <option value="7">Battery Charge (Bank 5)</option>
+                                                            <option value="8">Battery Charge (Total)</option>
+                                                            <option value="9">Battery Discharge (Bank 1)</option>
+                                                            <option value="10">Battery Discharge (Bank 2)</option>
+                                                            <option value="11">Battery Discharge (Bank 3)</option>
+                                                            <option value="12">Battery Discharge (Bank 4)</option>
+                                                            <option value="13">Battery Discharge (Bank 5)</option>
+                                                            <option value="14">Battery Discharge (Total)</option>
+                                                            <option value="15">Gen Input</option>
+                                                            <option value="16">Grid Input</option>
+                                                            <option value="17">Grid Output</option>
+                                                            <option value="18">Load Output</option>
+                                                            <option value="19">PV Input (PV Inverters)</option>
+                                                            <option value="20">PV Input (Solar Charge Controllers)
+                                                            </option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="col-md-2">Series 1</td>
+                                                    <td class="col-md-2">TotalLoadOutput</td>
+                                                    <td class="col-md-2">Series4</td>
+                                                    <td class="col-md-2">
+                                                        <select>
+                                                            <option value="3">Battery Charge (Bank 1)</option>
+                                                            <option value="4">Battery Charge (Bank 2)</option>
+                                                            <option value="5">Battery Charge (Bank 3)</option>
+                                                            <option value="6">Battery Charge (Bank 4)</option>
+                                                            <option value="7">Battery Charge (Bank 5)</option>
+                                                            <option value="8">Battery Charge (Total)</option>
+                                                            <option value="9">Battery Discharge (Bank 1)</option>
+                                                            <option value="10">Battery Discharge (Bank 2)</option>
+                                                            <option value="11">Battery Discharge (Bank 3)</option>
+                                                            <option value="12">Battery Discharge (Bank 4)</option>
+                                                            <option value="13">Battery Discharge (Bank 5)</option>
+                                                            <option value="14">Battery Discharge (Total)</option>
+                                                            <option value="15">Gen Input</option>
+                                                            <option value="16">Grid Input</option>
+                                                            <option value="17">Grid Output</option>
+                                                            <option value="18">Load Output</option>
+                                                            <option value="19">PV Input (PV Inverters)</option>
+                                                            <option value="20">PV Input (Solar Charge Controllers)
+                                                            </option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="col-md-2">select</td>
+                                                    <td class="col-md-2"><input type="date" name="" id=""></td>
+                                                    <td class="col-md-2">Select</td>
+                                                    <td class="col-md-2"><input type="date" name="" id=""></td>
+                                                </tr>
+
+                                                <td colspan="4" style="vertical-align: middle; text-align: center">
+                                                    <div class="mt-4" style="left: 7%; position: relative;">
+                                                        <input type="button" value="Submit " class="but DashboardButton"
+                                                            id="btnSubmit">
+                                                        <input type="reset" value="Cancel" class="but DashboardButton"
+                                                            id="btnReset">
+                                                    </div>
+                                                </td>
+                                            </table>
+                                        </form>
+                                    </div>
+                                    <div class="tab-pane fade" id="nav-contact" role="tabpanel"
+                                        aria-labelledby="nav-contact-tab">
+                                        <form>
+                                            <table>
+                                                <th>
+
+                                                </th>
+                                                <tr>
+                                                    <td class="col-md-2">intervar&nbsp;</td>
+                                                    <td class="col-md-2"><select>
+                                                            <option value="Day">Day</option>
+                                                            <option value="Month">Month</option>
+                                                            <option value="Year">Year</option>
+                                                            <option value="Life Time">Life Time</option>
+                                                        </select></td>
+                                                    <td class="col-md-2">series2&nbsp;</td>
+                                                    <td class="col-md-2"><select>
+                                                            <option value="3">Battery Charge (Bank 1)</option>
+                                                            <option value="4">Battery Charge (Bank 2)</option>
+                                                            <option value="5">Battery Charge (Bank 3)</option>
+                                                            <option value="6">Battery Charge (Bank 4)</option>
+                                                            <option value="7">Battery Charge (Bank 5)</option>
+                                                            <option value="8">Battery Charge (Total)</option>
+                                                            <option value="9">Battery Discharge (Bank 1)</option>
+                                                            <option value="10">Battery Discharge (Bank 2)</option>
+                                                            <option value="11">Battery Discharge (Bank 3)</option>
+                                                            <option value="12">Battery Discharge (Bank 4)</option>
+                                                            <option value="13">Battery Discharge (Bank 5)</option>
+                                                            <option value="14">Battery Discharge (Total)</option>
+                                                            <option value="15">Gen Input</option>
+                                                            <option value="16">Grid Input</option>
+                                                            <option value="17">Grid Output</option>
+                                                            <option value="18">Load Output</option>
+                                                            <option value="19">PV Input (PV Inverters)</option>
+                                                            <option value="20">PV Input (Solar Charge Controllers)
+                                                            </option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="col-md-2">
+                                                        Source&nbsp;
+                                                    </td>
+                                                    <td class="col-md-2">
+                                                            GeneratorEnergyDashboard
+                                                  </td>
+                                                    <td class="col-md-2">Series3</td>
+                                                    <td class="col-md-2">
+                                                        <select>
+                                                            <option value="3">Battery Charge (Bank 1)</option>
+                                                            <option value="4">Battery Charge (Bank 2)</option>
+                                                            <option value="5">Battery Charge (Bank 3)</option>
+                                                            <option value="6">Battery Charge (Bank 4)</option>
+                                                            <option value="7">Battery Charge (Bank 5)</option>
+                                                            <option value="8">Battery Charge (Total)</option>
+                                                            <option value="9">Battery Discharge (Bank 1)</option>
+                                                            <option value="10">Battery Discharge (Bank 2)</option>
+                                                            <option value="11">Battery Discharge (Bank 3)</option>
+                                                            <option value="12">Battery Discharge (Bank 4)</option>
+                                                            <option value="13">Battery Discharge (Bank 5)</option>
+                                                            <option value="14">Battery Discharge (Total)</option>
+                                                            <option value="15">Gen Input</option>
+                                                            <option value="16">Grid Input</option>
+                                                            <option value="17">Grid Output</option>
+                                                            <option value="18">Load Output</option>
+                                                            <option value="19">PV Input (PV Inverters)</option>
+                                                            <option value="20">PV Input (Solar Charge Controllers)
+                                                            </option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="col-md-2">Series 1</td>
+                                                    <td class="col-md-2">Gen</td>
+                                                    <td class="col-md-2">Series4</td>
+                                                    <td class="col-md-2">
+                                                        <select>
+                                                            <option value="3">Battery Charge (Bank 1)</option>
+                                                            <option value="4">Battery Charge (Bank 2)</option>
+                                                            <option value="5">Battery Charge (Bank 3)</option>
+                                                            <option value="6">Battery Charge (Bank 4)</option>
+                                                            <option value="7">Battery Charge (Bank 5)</option>
+                                                            <option value="8">Battery Charge (Total)</option>
+                                                            <option value="9">Battery Discharge (Bank 1)</option>
+                                                            <option value="10">Battery Discharge (Bank 2)</option>
+                                                            <option value="11">Battery Discharge (Bank 3)</option>
+                                                            <option value="12">Battery Discharge (Bank 4)</option>
+                                                            <option value="13">Battery Discharge (Bank 5)</option>
+                                                            <option value="14">Battery Discharge (Total)</option>
+                                                            <option value="15">Gen Input</option>
+                                                            <option value="16">Grid Input</option>
+                                                            <option value="17">Grid Output</option>
+                                                            <option value="18">Load Output</option>
+                                                            <option value="19">PV Input (PV Inverters)</option>
+                                                            <option value="20">PV Input (Solar Charge Controllers)
+                                                            </option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="col-md-2">select</td>
+                                                    <td class="col-md-2"><input type="date" name="" id=""></td>
+                                                    <td class="col-md-2">Select</td>
+                                                    <td class="col-md-2"><input type="date" name="" id=""></td>
+                                                </tr>
+
+                                                <td colspan="4" style="vertical-align: middle; text-align: center">
+                                                    <div class="mt-4" style="left: 7%; position: relative;">
+                                                        <input type="button" value="Submit " class="but DashboardButton"
+                                                            id="btnSubmit">
+                                                        <input type="reset" value="Cancel" class="but DashboardButton"
+                                                            id="btnReset">
+                                                    </div>
+                                                </td>
+                                            </table>
+                                        </form>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -114,17 +962,17 @@
             </div>
         </div>
     </section>
-        <div class="ct-sec1">
+    <div class="ct-sec1">
 
-                <div class="row">
-                    <div class="y-tx">
-                        <p>© DIGITAL TRINITY</p>
-                    </div>
-
-              
+        <div class="row">
+            <div class="y-tx">
+                <p>© DIGITAL TRINITY</p>
             </div>
+
+
         </div>
-    
+    </div>
+
     <script src="./js/jquery-3.4.1.js"></script>
     <script src="./js/popper.min.js"></script>
     <script src="./bootstrap-4.3.1-dist/js/bootstrap.js"></script>

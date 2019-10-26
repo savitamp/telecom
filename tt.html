@@ -1,101 +1,129 @@
-<!DOCTYPE html>
-<html lang="en">
+<form id="frmReportInputData" novalidate="novalidate">
+    <div id="divInputData">
+        <input id="DashboardDataModel_ReportType" name="DashboardDataModel.ReportType" type="hidden" value="SolarEnergyDashboard">
+        <input data-val="true" data-val-number="The field SiteId must be a number." data-val-required="The SiteId field is required." id="DashboardDataModel_SiteId" name="DashboardDataModel.SiteId" type="hidden" value="27543">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="shortcut icon" href="./images/fav1.jpg" type="image/x-icon">
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="./bootstrap-4.3.1-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="./bootstrap-4.3.1-dist/css/bootstrap.min.css">
-    <!-- Font awesome -->
-    <link rel="stylesheet" href="./Font-Awesome-4.7.0/css/font-awesome.css">
-    <link rel="stylesheet" href="./Font-Awesome-4.7.0/css/font-awesome.min.css">
-    <!-- Font -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-    <!--custom css stylesheet-->
-    <link rel="stylesheet" href="./style.css">
-</head>
+        <table class="SolarEnergyDashboardInputtable">
+            <tbody><tr>
+                <td class="LableAlign">
+                    <div>Interval<span>&nbsp; &nbsp;</span></div>
+                </td>
+                <td style="width: 30%">
 
-<body>
-    <div class="container side-bar card card-body">
-        <div class="row">
-            <div class="col-md-2">
-                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical" onclick="myfm">
-                    <button onclick="myFunction()" id="v-pills-home-tab">Performance</button><br>
-                    <button onclick="myFunction1()" id="v-pills-profile-tab">Devices</button><br>
-                    <button onclick="myFunction2()" id="v-pills-messages-tab">Events</button><br>
-                    <button onclick="myFunction3()" id="v-pills-settings-tab">My Site</button>
-                </div>
-            </div>
-            <div class="col-md-10">
-                <div class="tab-content" id="v-pills-tabContent">
-                    <div id="myDIV">
-                        <div class="card card-body up-bar" id="per-dash">
-                            <nav>
-                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab"
-                                        href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Site
-                                        Summary</a>
-                                    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab"
-                                        href="#nav-profile" role="tab" aria-controls="nav-profile"
-                                        aria-selected="false">Solar Energy</a>
-                                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab"
-                                        href="#nav-contact" role="tab" aria-controls="nav-contact"
-                                        aria-selected="false">Grid Energy</a>
-                                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab"
-                                        href="#nav-contact" role="tab" aria-controls="nav-contact"
-                                        aria-selected="false">Battery Energy</a>
-                                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab"
-                                        href="#nav-contact" role="tab" aria-controls="nav-contact"
-                                        aria-selected="false">Load Energy</a>
-                                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab"
-                                        href="#nav-contact" role="tab" aria-controls="nav-contact"
-                                        aria-selected="false">Generator Energy</a>
-                                </div>
-                            </nav>
-                            <div class="tab-content" id="nav-tabContent">
-                                <div class="tab-pane fade show" id="nav-home" role="tabpanel"
-                                    aria-labelledby="nav-home-tab">Lorem ipsum dolor sit amet consectetur adipisicing
-                                    elit. Nemo, dolores.</div>
-                                <div class="tab-pane fade" id="nav-profile" role="tabpanel"
-                                    aria-labelledby="nav-profile-tab">Lorem ipsum dolor sit amet consectetur adipisicing
-                                    elit. Reiciendis, temporibus.</div>
-                                <div class="tab-pane fade" id="nav-contact" role="tabpanel"
-                                    aria-labelledby="nav-contact-tab">Lorem, ipsum dolor sit amet consectetur
-                                    adipisicing elit. Optio, hic!</div>
-                                <div class="tab-pane fade" id="nav-contact" role="tabpanel"
-                                    aria-labelledby="nav-contact-tab">Lorem ipsum, dolor sit amet consectetur
-                                    adipisicing elit. Doloremque, earum.</div>
-                                <div class="tab-pane fade" id="nav-contact" role="tabpanel"
-                                    aria-labelledby="nav-contact-tab">Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Blanditiis, cumque.</div>
-                                <div class="tab-pane fade" id="nav-contact" role="tabpanel"
-                                    aria-labelledby="nav-contact-tab">Lorem ipsum dolor sit amet consectetur adipisicing
-                                    elit. Veniam, cum.</div>
+                    <select id="ddlInterval" name="DashboardDataModel.SelectedInterval" class="valid"><option value="1">Day</option>
+<option value="2">Month</option>
+<option value="3">Year</option>
+<option value="4">Life Time</option>
+</select>
 
-                            </div>
-                        </div>
-                    </div>
-                    <div id="t2">
-                        this is 22 option
-                    </div>
-                    <div id="t3">
-                        this is 56 option
-                    </div>
-                    <div id="t4">
-                        this is 344 option
-                    </div>
-                </div>
-            </div>
+                </td>
+                <td class="LableAlign" style="width: 10%">Series 2<span>&nbsp; &nbsp;</span></td>
+                <td style="width: 30%">
+                    <select id="ddlSeries2" name="DashboardDataModel.SelectedSeries2"><option value="">Select</option>
+<option value="3">Battery Charge (Bank 1)</option>
+<option value="4">Battery Charge (Bank 2)</option>
+<option value="5">Battery Charge (Bank 3)</option>
+<option value="6">Battery Charge (Bank 4)</option>
+<option value="7">Battery Charge (Bank 5)</option>
+<option value="8">Battery Charge (Total)</option>
+<option value="9">Battery Discharge (Bank 1)</option>
+<option value="10">Battery Discharge (Bank 2)</option>
+<option value="11">Battery Discharge (Bank 3)</option>
+<option value="12">Battery Discharge (Bank 4)</option>
+<option value="13">Battery Discharge (Bank 5)</option>
+<option value="14">Battery Discharge (Total)</option>
+<option value="15">Gen Input</option>
+<option value="16">Grid Input</option>
+<option value="17">Grid Output</option>
+<option value="18">Load Output</option>
+<option value="19">PV Input (PV Inverters)</option>
+<option value="20">PV Input (Solar Charge Controllers)</option>
+</select>
+                <input id="SelectedSeries2Name" name="DashboardDataModel.SelectedSeries2Name" type="hidden" value="">
+            </td>
+        </tr>
+        <tr>
+            <td class="LableAlign">Source<span>&nbsp; &nbsp;</span></td>
+            <td>
+<select id="ddlSource" name="DashboardDataModel.SelectedSource" class="valid"><option selected="selected" value="1">SCC</option>
+<option value="2">PV Inverter</option>
+</select>                <input id="DashboardDataModel_SelectedSourceName" name="DashboardDataModel.SelectedSourceName" type="hidden" value="SCC">
+            </td>
+            <td class="LableAlign">Series 3<span>&nbsp; &nbsp;</span></td>
+            <td>
+                <select id="ddlSeries3" name="DashboardDataModel.SelectedSeries3"><option value="">Select</option>
+<option value="3">Battery Charge (Bank 1)</option>
+<option value="4">Battery Charge (Bank 2)</option>
+<option value="5">Battery Charge (Bank 3)</option>
+<option value="6">Battery Charge (Bank 4)</option>
+<option value="7">Battery Charge (Bank 5)</option>
+<option value="8">Battery Charge (Total)</option>
+<option value="9">Battery Discharge (Bank 1)</option>
+<option value="10">Battery Discharge (Bank 2)</option>
+<option value="11">Battery Discharge (Bank 3)</option>
+<option value="12">Battery Discharge (Bank 4)</option>
+<option value="13">Battery Discharge (Bank 5)</option>
+<option value="14">Battery Discharge (Total)</option>
+<option value="15">Gen Input</option>
+<option value="16">Grid Input</option>
+<option value="17">Grid Output</option>
+<option value="18">Load Output</option>
+<option value="19">PV Input (PV Inverters)</option>
+<option value="20">PV Input (Solar Charge Controllers)</option>
+</select>
+            <input id="SelectedSeries3Name" name="DashboardDataModel.SelectedSeries3Name" type="hidden" value="">
+        </td>
+    </tr>
+    <tr>
+        <td class="LableAlign">Series 1<span>&nbsp; &nbsp;</span></td>
+        <td>
+
+                <span id="lblSeriesName">PV Input</span>
+<input id="DashboardDataModel_SelectedSeries1" name="DashboardDataModel.SelectedSeries1" type="hidden" value="1">            <input id="SelectedSeries1Name" name="DashboardDataModel.SelectedSeries1Name" type="hidden" value="PV Input">
+        </td>
+        <td class="LableAlign">Series 4<span>&nbsp; &nbsp;</span></td>
+        <td>
+            <select id="ddlSeries4" name="DashboardDataModel.SelectedSeries4"><option value="">Select</option>
+<option value="3">Battery Charge (Bank 1)</option>
+<option value="4">Battery Charge (Bank 2)</option>
+<option value="5">Battery Charge (Bank 3)</option>
+<option value="6">Battery Charge (Bank 4)</option>
+<option value="7">Battery Charge (Bank 5)</option>
+<option value="8">Battery Charge (Total)</option>
+<option value="9">Battery Discharge (Bank 1)</option>
+<option value="10">Battery Discharge (Bank 2)</option>
+<option value="11">Battery Discharge (Bank 3)</option>
+<option value="12">Battery Discharge (Bank 4)</option>
+<option value="13">Battery Discharge (Bank 5)</option>
+<option value="14">Battery Discharge (Total)</option>
+<option value="15">Gen Input</option>
+<option value="16">Grid Input</option>
+<option value="17">Grid Output</option>
+<option value="18">Load Output</option>
+<option value="19">PV Input (PV Inverters)</option>
+<option value="20">PV Input (Solar Charge Controllers)</option>
+</select>
+        <input id="SelectedSeries4Name" name="DashboardDataModel.SelectedSeries4Name" type="hidden" value="">
+    </td>
+</tr>
+
+<tr>
+    <td class="LableAlign">Select<span>&nbsp; &nbsp;</span></td>
+    <td><input class="inputField datepicker startDateSelect hasDatepicker" id="txtStartDateRange_SolarEnergyDashboard" name="DashboardDataModel.SelectedStartDate" type="text" value="" readonly="readonly" data-calendar="true" calendar-yearonly="false"><img class="ui-datepicker-trigger datePickerIcon" src="/Content/images/DateIcon.png" alt="Open Calendar" title="Open Calendar" style="vertical-align: middle; margin-left: 4px;"></td>
+    <td class="LableAlign">Select<span>&nbsp; &nbsp;</span></td>
+    <td><input class="inputField datepicker endDateSelect hasDatepicker" id="txtEndDateRange_SolarEnergyDashboard" name="DashboardDataModel.SelectedEndDate" type="text" value="" readonly="readonly" data-calendar="true" calendar-yearonly="false"><img class="ui-datepicker-trigger datePickerIcon" src="/Content/images/DateIcon.png" alt="Open Calendar" title="Open Calendar" style="vertical-align: middle; margin-left: 4px;"></td>
+</tr>
+<tr>
+    <td colspan="4" style="vertical-align: middle; text-align: center">
+        <div style="left: 7%; position: relative;">
+            <input type="button" value="Submit " class="but DashboardButton" id="btnSubmit">
+            <input type="reset" value="Cancel" class="but DashboardButton" id="btnReset">
         </div>
-    </div>
-    <script src="./js/jquery-3.4.1.js"></script>
-    <script src="./js/popper.min.js"></script>
-    <script src="./bootstrap-4.3.1-dist/js/bootstrap.js"></script>
-    <script src="./js/app.js"></script>
-</body>
+    </td>
 
-</html>
+</tr>
+
+</tbody></table>
+<hr class="dashboardInputhr">
+</div>
+</form>

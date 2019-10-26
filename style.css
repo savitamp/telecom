@@ -177,3 +177,43 @@ div{
     border: 1px solid #000000;
     margin-bottom: 2px;
   }
+  .divImageData {
+    background-image: url("/images/SolarSite.svg");
+    width: 900px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    height: 500px;
+    background-size: 450px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 2px;
+}
+#DashboardTab .ui-tabs-panel {
+    border-width: 1px 1px 1px 1px;
+    border-color: #BCBCBC;
+    border-style: solid;
+    background-color: #eaeaea;
+    height: 700px;
+}
+
+#DashboardTab .ui-tabs-panel {
+    border-width: 1px 1px 1px 1px;
+    border-color: #BCBCBC;
+    border-style: solid;
+    background-color: #eaeaea;
+    height: 680px;
+    margin-top: 0px;
+}
+.btn-sub{
+    
+    top: 50%;
+
+}
+.td-data{
+    width: 10000%;
+}
